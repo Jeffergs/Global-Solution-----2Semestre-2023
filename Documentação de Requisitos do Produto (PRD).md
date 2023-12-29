@@ -24,7 +24,7 @@ O que não estamos fazendo
 
 <https://www.youtube.com/watch?v=XnmKy49fM5U>
 
-**Link do Tello: <https://trello.com/invite/b/TKZ1fANI/ATTIa77bbd0c6338629a4ae582a5b246204eB13B60F5/programa-viver-bem-20>**
+**Link do Tello(Requisitos funcionais, não funcionais e de negócio): <https://trello.com/invite/b/TKZ1fANI/ATTIa77bbd0c6338629a4ae582a5b246204eB13B60F5/programa-viver-bem-20>**
 
 [DIAGRAMA DE CASO DE USO – Programa Viver Bem 2.0](https://github.com/Jeffergs/Global-Solution-----2Semestre-2023/blob/main/Programa%20Viver%20Bem%202.0.png)
 
