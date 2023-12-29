@@ -21,7 +21,6 @@ O que não estamos fazendo
 
 
 **Link do Pitch:** 
-
 <https://www.youtube.com/watch?v=XnmKy49fM5U>
 
 **Link do Tello** (Requisitos funcionais, não funcionais e de negócio): <https://trello.com/invite/b/TKZ1fANI/ATTIa77bbd0c6338629a4ae582a5b246204eB13B60F5/programa-viver-bem-20>
