@@ -1,0 +1,1 @@
+# Global-Solution-----2Semestre-2023
