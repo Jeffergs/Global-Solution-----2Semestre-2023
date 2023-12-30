@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Questionário de Autocuidado</title>
+  <link rel="stylesheet" href="css/formulario.css">
+  <script src="js/formulario.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <form id="questionnaireForm">
+      <h2>QUESTIONÁRIO DE AUTOCUIDADO</h2>
+
+      <!-- QUESTÕES GERAIS DE SAÚDE -->
+      <h3>DADOS FÍSICOS</h3>
+      <div class="input-group">
+        <label for="peso">Qual é o seu peso (em quilos)?</label>
+        <input type="number" id="peso" name="peso" min="0" max="150" required>
+      </div>
+      <div class="input-group">
+        <label for="altura">Qual é a sua altura (em centímetros)?</label>
+        <input type="number" id="altura" name="altura" min="0" max="220" required>
+      </div>
+
+      <!-- HISTÓRICO MÉDICO -->
+      <h3>HISTÓRICO MÉDICO</h3>
+      <div class="input-group">
+        <label for="preExistente">Você tem alguma condição médica preexistente, além do Diabetes?</label>
+        <input type="text" id="preExistente" name="preExistente">
+      </div>
+
+      <div class="input-group">
+        <label for="medicacao">Está tomando algum medicamento atualmente?</label>
+        <input type="text" id="medicacao" name="medicacao">
+      </div>
+
+      <div class="input-group">
+        <label for="cirurgia">Já teve alguma cirurgia?</label>
+        <input type="text" id="cirurgia" name="cirurgia">
+      </div>
+
+      <!-- HISTÓRICO FAMILIAR -->
+      <h3>HISTÓRICO FAMILIAR</h3>
+      <div class="input-group">
+        <label for="historico">Existem problemas de saúde que ocorrem com frequência em sua família?</label>
+        <input type="text" id="historico" name="historico">
+      </div>
+
+      <!-- ALIMENTAÇÃO GERAL -->
+      <h3>ALIMENTAÇÃO GERAL</h3>
+      <div class="input-group">
+        <label for="dieta">Em quantos dos últimos SETE DIAS seguiu uma dieta saudável?</label>
+        <input type="number" id="dieta" name="dieta" min="0" max="7">
+      </div>
+      <div class="input-group">
+        <label for="orientNutri">Durante o último mês, QUANTOS DIAS POR SEMANA, em média, seguiu orientações alimentares dadas por um profissional de nutrição?</label>
+        <input type="number" id="orientNutri" name="orientNutri" min="0" max="7">
+      </div>
+
+      <!-- ESTILO DE VIDA E HÁBITOS -->
+      <h3>ESTILO DE VIDA E HÁBITOS</h3>
+      <div class="input-group">
+        <label for="diasExercicio">Em quantos dos últimos SETE DIAS praticou algum tipo de exercício físico específico?</label>
+        <input type="number" id="diasExercicio" name="diasExercicio" min="0" max="7">
+      </div>
+
+      <div class="input-group">
+        <label for="fuma">Você fuma?</label>
+        <input type="text" id="fuma" name="fuma">
+        <div id="cigarrosDia" style="display: none;">
+          <label for="cigarrosDia">Quantos cigarros por dia?</label>
+          <input type="number" id="cigarrosDia" name="cigarrosDia" min="0">
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label for="alcool">Com que frequência você consome álcool durante uma semana?</label>
+        <input type="text" id="alcool" name="alcool">
+      </div>
+
+      <div class="input-group">
+        <label for="estresse">Você enfrenta níveis elevados de estresse regularmente?</label>
+        <input type="text" id="estresse" name="estresse">
+      </div>
+
+      <!-- HÁBITOS DE SONO -->
+      <h3>HÁBITOS DE SONO</h3>
+      <div class="input-group">
+        <label for="dificuldadeSono">Você tem dificuldade para adormecer?</label>
+        <select id="dificuldadeSono" name="dificuldadeSono">
+          <option value="sim">Sim</option>
+          <option value="nao">Não</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label for="acordaNoite">Acorda frequentemente durante a noite?</label>
+        <select id="acordaNoite" name="acordaNoite">
+          <option value="sim">Sim</option>
+          <option value="nao">Não</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label for="descansado">Sente-se descansado ao acordar?</label>
+        <select id="descansado" name="descansado">
+          <option value="sim">Sim</option>
+          <option value="nao">Não</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label for="qualidadeSono">Como você classificaria a qualidade do seu sono de 1 a 10?</label>
+        <input type="number" id="qualidadeSono" name="qualidadeSono" min="0" max="10">
+      </div>
+
+      <!-- QUESTÕES RELACIONADAS APENAS AO DIABETES -->
+      <h3>QUESTÕES RELACIONADAS APENAS AO DIABETES</h3>
+      <!-- ALIMENTAÇÃO ESPECÍFICA -->
+      <div class="input-group">
+        <label for="frutasVegetais">Em quantos dos últimos SETE DIAS comeu cinco ou mais porções de frutas e/ou vegetais?</label>
+        <input type="number" id="frutasVegetais" name="frutasVegetais" min="0" max="7">
+      </div>
+      <div class="input-group">
+        <label for="gordura">Em quantos dos últimos SETE DIAS comeu alimentos ricos em gordura, como carnes vermelhas ou alimentos com leite integral ou derivados?</label>
+        <input type="number" id="gordura" name="gordura" min="0" max="7">
+      </div>
+      <div class="input-group">
+        <label for="doces">Em quantos dos últimos sete dias comeu doces?</label>
+        <input type="number" id="doces" name="doces" min="0" max="7">
+      </div>
+
+      <!-- MONITORIZAÇÃO DA GLICEMIA -->
+      <div class="input-group">
+        <label for="glicose">Em quantos dos últimos SETE DIAS avaliou o nível de glicose (açúcar) no sangue?</label>
+        <input type="number" id="glicose" name="glicose" min="0" max="7">
+      </div>
+      <div class="input-group">
+        <label for="glicoseCheck">Em quantos dos últimos SETE DIAS avaliou o nível de glicose (açúcar) no sangue o número de vezes recomendado pelo seu médico?</label>
+        <input type="number" id="glicoseCheck" name="glicoseCheck" min="0" max="7">
+      </div>
+      <div class="input-group">
+        <label for="maiorRecomendado">Em quantos dos últimos SETE DIAS o nível de glicose (açúcar) no sangue esteve maior do que o recomendado?</label>
+        <input type="number" id="maiorRecomendado" name="maiorRecomendado" min="0" max="7">
+      </div>
+
+      <!-- MEDICAÇÃO -->
+      <div class="input-group">
+        <label for="medicamento">Em quantos dos últimos SETE DIAS tomou seus medicamentos do diabetes e/ou insulina, conforme o recomendado pelo seu médico?</label>
+        <input type="number" id="medicamento" name="medicamento" min="0" max="7">
+      </div>
+
+      <div class="input-group">
+        <button type="button"  onclick="generateReport()">Enviar</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
